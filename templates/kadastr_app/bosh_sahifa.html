@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Kadastr Bot</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f0f4f8; margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 { color: #2c3e50; text-align: center; }
+        .card { background: white; border-radius: 10px; padding: 20px; margin: 10px 0;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: inline-block; width: 30%; text-align: center; }
+        .cards { display: flex; gap: 20px; justify-content: center; margin: 20px 0; }
+        .card h2 { font-size: 2em; color: #3498db; margin: 0; }
+        .card p { color: #666; margin: 5px 0 0; }
+        .btn { display: block; text-align: center; background: #3498db; color: white;
+               padding: 12px 24px; border-radius: 6px; text-decoration: none; margin: 20px auto;
+               width: fit-content; font-size: 1.1em; }
+        .btn:hover { background: #2980b9; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🏛️ Kadastr Bot - Boshqaruv Paneli</h1>
+    <div class="cards">
+        <div class="card">
+            <h2>{{ jami_yozuvlar }}</h2>
+            <p>📋 Jami yozuvlar</p>
+        </div>
+        <div class="card">
+            <h2>{{ jami_foydalanuvchilar }}</h2>
+            <p>👥 Bot foydalanuvchilari</p>
+        </div>
+        <div class="card">
+            <h2>{{ jami_fayllar }}</h2>
+            <p>📁 Yuklangan fayllar</p>
+        </div>
+    </div>
+    <a href="/admin/" class="btn">⚙️ Admin Panelga O'tish</a>
+</div>
+</body>
+</html>
